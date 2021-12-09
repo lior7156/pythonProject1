@@ -27,3 +27,5 @@ print("the namber is",computer*2)
 
 
 
+
+
