@@ -1,10 +1,16 @@
 import time
 
+#מחזירה את הזמן הנוכחי בשניות מ1970
 print(time.time())
+#זמון השהייה לתוכנה
 print(time.sleep(1))
+#מפרק לגורמים את היום מהמחשב
 print(time.localtime())
+#מחזיר את התאריך כמחרוזת להדפסה למשתמש
 print(time.asctime())
+#זמן מקו המשווה
 print(time.gmtime())
+#מקבל זמן בשניות מ1970 ומחזירה מחרוזת להדפסה למשתמש
 print(time.ctime())
 import datetime
 #מראה עוד כמה זמן נשאר עד לתאריך שכתבנו
