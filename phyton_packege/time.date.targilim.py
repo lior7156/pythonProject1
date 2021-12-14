@@ -30,6 +30,15 @@
 # mounth = datetime.time().strftime("%b")
 # print(f"BD:{mounth}-{day}-{year}")
 
+# from random import *
+# num=randint(1,99)
+# print(num)
+# if num%7==0 or num%10==7==0 or num//10==7:
+#     print("valid number")
+#
+# for i in range(5):
+#     print(i,end=" ")
+
 
 
 

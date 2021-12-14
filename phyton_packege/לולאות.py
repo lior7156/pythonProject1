@@ -40,17 +40,38 @@
 # print("error")
 
 #שאלה 5
-num=int(input("enter number: "))
-while 100>num>9:
-    while (num%7==0) and num>10: #מתחלקים ב7 בלי שארית
-        print("luck")
-        num = int(input("enter number: "))
-# לולאה 2 מכניסה מספרים שהספרה הראשונה או השניה שלהם היא 7
-    while ((num%10==7) or (num//10==7)) and num>=10:
-        print("luck")
-        num = int(input("enter number: "))
-    num = int(input("enter number: "))
+# num=int(input("enter number: "))
+# while 100>num>9:
+#     while (num%7==0) and num>10: #מתחלקים ב7 בלי שארית
+#         print("luck")
+#         num = int(input("enter number: "))
+# # לולאה 2 מכניסה מספרים שהספרה הראשונה או השניה שלהם היא 7
+#     while ((num%10==7) or (num//10==7)) and num>=10:
+#         print("luck")
+#         num = int(input("enter number: "))
+#     num = int(input("enter number: "))
 
+# from random import *
+# num=randint(1,99)
+# print(num)
+# if num%7==0 or num%10==7==0 or num//10==7:
+#     print("valid number")
+#
+# for i in range(5):
+#     print(i,end=" ")
+
+sum=0
+count=0
+
+for i in range(5):
+    price = int(input("enter price: "))
+    sum+=price
+    count+=1
+    if sum>200:
+        print("too expensive")
+        break
+print("sum",sum, "count",count)
+print("average",sum/count)
 
 
 
