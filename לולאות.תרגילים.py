@@ -101,7 +101,27 @@
 # print(count)
 
 # שאלה 4.1
+# number1=int(input("enter first number: "))
+# number2=int(input("enter second number: "))
+# for i in range(number1+1,number2):
+#     if i%2==0:
+#         print(i)
 
+# שאלה 4.2
+# number1=int(input("enter the number: "))
+# is_prime=True
+# i=2
+# while i in range(2,number1):
+#     if number1%i==0:
+#         is_prime=False
+#     i+=1
+#
+# if is_prime:
+#     print("the number is prime")
+# else:
+#     print("the number isn't prime")
+
+# שאלה 4.3
 
 
 
