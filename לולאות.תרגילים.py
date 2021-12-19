@@ -121,7 +121,69 @@
 # else:
 #     print("the number isn't prime")
 
-# שאלה 4.3
+# שאלה 1
+# sum=0
+# for i in range(6):
+#     count=int(input("enter the number: "))
+#     sum+=count
+# print(sum/6)
+
+# שאלה 2
+# sum=0
+# average=0
+# for i in range(6):
+#     number=int(input("enter the number: "))
+#     if number%2==0:
+#         sum+=number
+#         average+=1
+# print(sum/average)
+
+# שאלה 3
+# for i in range(10,100):
+#     if i%10==7:
+#         print(i,end=" ")
+
+# שאלה 4
+# sum=0
+# for i in range(10,100):
+#     if i%10==0:
+#         sum+=i
+# print(sum)
+
+# שאלה 10
+# counter=0
+# number=int(input("enter the number: "))
+# while number!=0:
+#     if number%7==0 or number%3==0:
+#         counter+=1
+#     number = int(input("enter the number: "))
+# print(counter)
+
+# שאלה 9
+# number=int(input("enter the number: "))
+# for i in range(2,number,2):
+#     print(i,end=" ")
+
+# שאלה 8
+# number=int(input("enter the number: "))
+# for i in range(1,number):
+#     if i%5==0:
+#         print(i,end=" ")
+
+# שאלה 7
+# sum=0
+# for i in range(5):
+#     number=int(input("enter the number: "))
+#     sum+=number%10
+# print(sum)
+
+# שאלה 6
+grade=0
+average=0
+
+
+
+
 
 
 
