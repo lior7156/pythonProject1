@@ -1,9 +1,9 @@
 #12/8/2018
 
 day=int(input("day: "))
-mounth=int(input("mounth: "))
+month=int(input("month: "))
 year=int(input("year: "))
 
-print(f"{day}/{mounth}/{year%100}")
+print(f"{day}/{month}/{year%100}")
 
 
