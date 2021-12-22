@@ -1,104 +1,51 @@
-# תרגיל 5 תרגילי תנאים
-# num1=int(input("enter the number: "))
-# num2=int(input("enter the number: "))
-# if num1%2==0 and num2%2==0:
-#     print(num1+num2)
-# else:
-#     print(num1*num2)
-# תרגיל 1
-# a=int(input("enter the number: "))
-# b=int(input("enter the number: "))
-# if (a+b)%2==0:
-#     print("even number")
-# else:
-#     print("odd number")
-# תרגיל 3
-# age=int(input("enter age: "))
-# if 0<=age<=18:
-#     print("child")
-# elif 19<=age<=60:
-#     print("adult")
-# elif 61<=age<=120:
-#     print("senior")
-# elif age<0 or age>120:
-#     print("invalid age")
+# שאלה 1
+# from random import randint
+# list1=[randint(1,100) for i in range(10)]
+# print(list1)
 
-# תרגילי לולאות בסיסיים
-# תרגיל 10
-# num=int(input("enter the number: "))
-# count=0
-#
-# while num !=0:
-#     num = int(input("enter the number: "))
-#     if num%3==0 or num%7==0:
-#         count+=1
-# print(count)
-# תרגיל 6
-# grade=int(input("enter grades: "))
-# count1=0
-# count2=0
-# sum1=0
-# sum2=0
-#
-# while 0<=grade<=100:
-#     if 60<=grade:
-#         sum1+=grade
-#         count1+=1
-#     else:
-#         sum2+=grade
-#         count2+=1
-#     grade = int(input("enter grades: "))
-#
-# print(sum1/count1)
-# print(sum2/count2)
+# שאלה2
+# list1=[1,2,3,4,5,6,7,8,9,10]
+#      0,1,2,3,4,5,6,7,8,9
 
-# תרגיל 2
-# sum=0
-# count=0
-# for i in range(6):
-#     num=int(input("enter number: "))
-#     if num%2==0:
-#         sum+=num
-#         count+=1
-# print(sum/count)
+# שאלה 3
+# print(list1[7:])
 
-# תרגיל 3
-# for i in range(10,100):
-#     if i%10==7:
-#         print(i,end=" ")
+# שאלה 4
+# print(list1[::-1])
 
-# תרגיל 4
-# sum=0
-# for i in range(10,100):
-#     if i%10==0:
-#         sum+=i
-# print(sum)
+# שאלה 5
+# print(list1[0::2])
 
-# תרגיל 5
-# grade=int(input("enter grades: "))
-# sum=0
-# count=0
-# while 60<=grade<=100:
-#     sum+=grade
-#     count+=1
-#     grade = int(input("enter grades: "))
-# else: print("invalid grade!!")
-# print("average: ",sum/count)
+# שאלה 6
+# print(list1[0:5])
 
-# תרגיל 7
-# sum=0
-# for i in range(5):
-#     num=int(input("enter number: "))
-#     sum+=num%10
-# print(sum)
+# שאלה 7
+# print(list1[0::2])
 
-# תרגיל 8
+# שאלה 8
 # num=int(input("enter number: "))
-# for i in range(1,num):
-#     if i%5==0:
-#         print(i,end=" ")
+# list2=[num]
+# list1[7:]=list2
+# print(list1)
 
-# תרגיל 9
+# שאלה 9
 # num=int(input("enter number: "))
-# for i in range(2,num,2):
-#     print(i,end=" ")
+# list2=[num]
+# list1[-3:]=list2
+# print(list1)
+
+# שאלה 10
+# list2=[]
+# for i in list1:
+#     if i%3==0:
+#         list2.append(i)
+# print(list2)
+# for i in list2:
+#     list1.remove(i)
+# print(list1)
+
+# שאלה 11
+sum=0
+list1=[1,1,2,3,4,5,6,7,8,9]
+#      0,1,2,3,4,5,6,7,8,9
+for i in range(1,10):
