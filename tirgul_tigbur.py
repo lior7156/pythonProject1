@@ -46,6 +46,26 @@
 
 # שאלה 11
 sum=0
-list1=[1,1,2,3,4,5,6,7,8,9]
-#      0,1,2,3,4,5,6,7,8,9
-for i in range(1,10):
+# list1=[1,1,2,3,4,5,6,7,8,9]
+# #      0,1,2,3,4,5,6,7,8,9
+# for i in range(1,10):
+
+# תרגילי 1 string
+text=input("enter text: ")
+new_text=" "
+for i in text:
+    if not i=="a" or i=="A":
+        new_text+=i
+print(new_text)
+
+
+
+
+
+
+
+
+
+
+
+

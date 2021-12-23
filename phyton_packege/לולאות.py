@@ -73,25 +73,3 @@
 # print("sum",sum, "count",count)
 # print("average",sum/count)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
