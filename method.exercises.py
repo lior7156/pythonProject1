@@ -1,3 +1,4 @@
+from random import randint
 # 2 תרגיל
 # def number(a):
 #     if 100<=a<=999:
@@ -57,7 +58,7 @@
 #         if a<=i<=b:
 #             print(i,end=" ")
 #     return
-
+#
 # num1=int(input("enter number 1: "))
 # num2=int(input("enter number 2: "))
 # print(print_2_numbers(num1,num2))
@@ -79,16 +80,57 @@
 # print(print_2_numbers(num1,num2))
 
 # תרגיל 9
+# def age_5_times(age):
+#     for i in range(5):
+#         while 0<=age<=120:
+#             if 0<=age<=18:
+#                 print("child")
+#                 age = int(input("add your age: "))
+#             elif 19<=age<=60:
+#                 print("adult")
+#                 age = int(input("add your age: "))
+#             elif 61<=age<=120:
+#                 print("senior")
+#                 age = int(input("add your age: "))
+#             else:
+#                 print("invalid age!!")
+#                 return i
+#             break
+# number = int(input("add your age: "))
+# print(age_5_times(number))
 
-age=int(input("number: "))
-while 0<=age<=120:
-    while 0<=age<=18:
-        print("child")
-        age = int(input("number: "))
-    while 19<=age<=60:
-        print("adult")
-        age = int(input("number: "))
-    while 61<=age<=120:
-        print("senior")
-        age=int(input("number: "))
-print("error")
+# תרגיל 10
+# def get_5_grades(a):
+#     if 70<=a<=100:
+#         return True
+#     elif 0<=a<70:
+#         return False
+#
+# for i in range(5):
+#     num =int(input("enter grade: "))
+#     if get_5_grades(num):
+#         print("pass")
+#     else:
+#         print("fail")
+
+# תרגיל 11
+# def number():
+#     list1=[i for i in range(2,41,2)]
+#     return list1
+#
+# print(number())
+
+# תרגיל 12
+def random_list():
+    list1=[randint(1,100) for i in range(20)]
+    return list1
+
+print(random_list())
+
+# תרגיל 13
+def max_index():
+    list1=[randint(1,100) for i in range(20)]
+    list2=list1
+    return max(list2)
+print(max_index())
+

@@ -73,12 +73,12 @@
 # print("average",sum/count)
 
 # שאלה 7
-# sum=0
+sum=0
 
-# for i in range(5):
-#     number=int(input("enter number: "))
-#     sum+=number%10
-# print(sum)
+for i in range(5):
+    number=int(input("enter number: "))
+    sum+=number%10
+print(sum)
 
 # שאלה 8
 # number=int(input("enter number: "))
