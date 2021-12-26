@@ -114,23 +114,85 @@ from random import randint
 #         print("fail")
 
 # תרגיל 11
-# def number():
-#     list1=[i for i in range(2,41,2)]
-#     return list1
-#
-# print(number())
+# def even_numbers(list1:list):
+#     for i in range(2,41,2):
+#         list1.append((i))
+
+# list1=[]
+# even_numbers(list1)
+# print(list1)
 
 # תרגיל 12
-def random_list():
-    list1=[randint(1,100) for i in range(20)]
-    return list1
+# def random_list(list1:list):
+#     list1[:]=[randint(1,100) for i in range(20)]
+    # for i in range(20):
+    #     list1.append(randint(1,100))
 
-print(random_list())
+# def count_num_in_list(num,list1:list):
+#     return list1.count(num)
 
-# תרגיל 13
-def max_index():
-    list1=[randint(1,100) for i in range(20)]
-    list2=list1
-    return max(list2)
-print(max_index())
+# list1=[]
+# random_list(list1)
+# print(list1)
+# num=int(input("enter number: "))
+# print(count_num_in_list(num,list1))
+
+# # תרגיל 13
+# def max_index(list1:list):
+#     return list1.index(max(list1))
+
+# print(max_index(list1))
+
+# תרגיל 5 קובץ 2
+# def convert_to_list(items):
+#     if type(items) in [str,dict,tuple,set]:
+#         list1=[i for i in items]
+#         return list1
+#     else:
+#         print("invalid type")
+#         return None
+#
+# print(convert_to_list((1,2,3,4,5)))
+# print(convert_to_list({1,2,3,4,5}))
+# print(convert_to_list(("abcd123")))
+# print(convert_to_list({1:10,2:20,3:30,4:40}))
+# print(convert_to_list(50))
+
+# תרגיל 6
+# def remove_from_list(list1:list,item):
+#     item_location=list1.index(item)
+#     list1[item_location:item_location+1]=[]
+#     return list1
+#
+# list1=[1,2,3,4,5,4]
+# remove_from_list(list1,4)
+# print(list1)
+
+# חוברת תרגילים תרגיל 10.1
+# def tree_numbers(a,b,c):
+#     return max(a,b,c)
+
+# num1=int(input("enter number: "))
+# num2=int(input("enter number: "))
+# num3=int(input("enter number: "))
+# print(tree_numbers(num1,num2,num3))
+
+# 10.2
+# def sum_list(list1:list):
+#     list1[:]=[7,0,3,2,8]
+#     for i in list1:
+#         return sum(list1)
+#
+# list1=[]
+# print(sum_list(list1))
+
+# 10.3
+# def mult_list():
+#     list1=[7,-1,3,2,8]
+#     mult=1
+#     for i in list1:
+#         mult*=i
+#     return mult
+#
+# print(mult_list())
 
