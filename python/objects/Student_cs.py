@@ -10,7 +10,7 @@ class Student_cs:
         self.subject_grades = {}
 
     def add_grade(self, subject, grade):
-        if type(grade)!=int:
+        if type(grade) != int:
             raise TypeError("grade must be of type int!!")
         if grade<0 or grade>100:
             raise ValueError("grade must be between 0-100!!")
@@ -21,31 +21,24 @@ class Student_cs:
                f'subject and grades: {self.subject_grades}'
 
     def calc_factor(self, subject, factor):
-        if type(factor)!=int:
+        if type(factor) != int:
             raise TypeError("factor must be of type int!!")
         if subject in self.subject_grades:
             factor = (factor*0.01)
             self.subject_grades[subject] += self.subject_grades[subject]*factor
-            if self.subject_grades[subject]>100:
-                self.subject_grades[subject]=100
+            if self.subject_grades[subject] > 100:
+                self.subject_grades[subject] = 100
 
     def average(self):
-        sum = 0
-        count = 0
-        for grade in self.subject_grades:
-            if grade in self.subject_grades:
-                sum += grade
-                count += 1
-                average = sum / count
-                return average
+        if type(self.subject_grades.values()) is str:
+            raise TypeError("values type must be int or float!!")
+
+        for i in self.subject_grades:
+            avg = sum(self.subject_grades.values())/len(self.subject_grades.values())
+            return avg
 
     def __eq__(self, other):
         if self.id == other.id:
             return True
         else:
             return False
-
-dan=Student_cs(12,'dan')
-dan.subject_grades={'math': 90, 'english': 85, 'arabic': 80}
-print(dan)
-print(dan.average())

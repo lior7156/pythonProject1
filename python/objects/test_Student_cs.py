@@ -6,14 +6,13 @@ class Test_Student_cs(TestCase):
         print("set up")
         self.student1 = Student_cs(12,"lior")
 
-
-    # test a valid case of __init__
     def test__init__1(self):
+        # test a valid case of __init__
         self.assertEqual(self.student1.id,12)
         self.assertEqual(self.student1.name,"lior")
 
-    # test invalid parameters of __init__
     def test__init__2(self):
+        # test invalid parameters of __init__
         with self.assertRaises(TypeError):
             invalid_student=Student_cs("ab","lior")
         with self.assertRaises(TypeError):
@@ -26,14 +25,14 @@ class Test_Student_cs(TestCase):
         # invalid
         self.assertNotEqual(self.student1.subject_grades, [])
 
-    # test valid add grade
     def test_add_grade_1(self):
+        # test valid add grade
         self.student1.add_grade('english',90)
         self.assertEqual(self.student1.subject_grades['english'],90)
         self.assertEqual(len(self.student1.subject_grades),1)
 
-    # test invalid add grade
     def test_add_grade_2(self):
+        # test invalid add grade
         with self.assertRaises(TypeError):
             self.student1.add_grade('english', 'aaa')
         with self.assertRaises(ValueError):
@@ -64,7 +63,33 @@ class Test_Student_cs(TestCase):
             self.student1.calc_factor('math', 10.5)
             self.assertEqual(self.student1.subject_grades['math'], 88.4)
 
-    def test_average__1(self):
+    def test_average(self):
+        # valid average test
         self.student1.subject_grades = {'math': 90, 'english': 85, 'arabic': 80}
-        self.assertEqual(self.student1.subject_grades, 85.0)
+        self.assertEqual(self.student1.average(), 85.0)
+
+        # invalid type string grade
+        with self.assertRaises(TypeError):
+            self.student1.subject_grades = {'math': 90, 'english': 85, 'arabic': ''}
+            self.student1.average()
+            print(self.student1.average())
+
+    def test__eq__(self):
+        # valid test of __eq__
+        self.dan=Student_cs(12,'dan')
+        self.ben=Student_cs(12,'ben')
+        self.assertEqual(self.ben,self.dan)
+
+        # invalid test string id
+        with self.assertRaises(TypeError):
+            self.dan = Student_cs('aa', 'dan')
+            self.ben = Student_cs(14, 'dan')
+
+        # invalid test int name
+        with self.assertRaises(TypeError):
+            self.dan = Student_cs(12, 'dan')
+            self.ben = Student_cs(12, 1345)
+            self.assertEqual(self.ben, self.dan)
+
+
 
