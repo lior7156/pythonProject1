@@ -12,11 +12,11 @@ from python.objects.Person import Person
 #     print("the person has no children")
 # person1.age_group()
 
-p1=Person("dan",24,3)
-p2=Person("dana",30,2)
-p3=Person("ben",17,0)
+p1=Person(12, "dan", 24, 3)
+p2=Person(13, "dana", 30, 2)
+p3=Person(14, "ben", 17, 0)
 
-list1=[p1,p2,p3]
+list1 = [p1, p2, p3]
 print(list1)
 print()
 print(list1[2])

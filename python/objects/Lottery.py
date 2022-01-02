@@ -34,11 +34,11 @@ class Lottery:
 lottery1=Lottery()
 lottery1.print_random_number()
 
-for i in range(6):
-    if 1<=i<=45:
-
-
-    else:
-        print("the user has been disqualified due to invalid guesses!")
+# for i in range(6):
+#     if 1<=i<=45:
+#
+#
+#     else:
+#         print("the user has been disqualified due to invalid guesses!")
 
 
