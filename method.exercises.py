@@ -14,10 +14,13 @@ from random import randint
 
 # תרגיל 1
 # def _3_digit(a):
-#     num1=a//100
-#     num2=a//10%10
-#     num3=a%10
-#     return num1+num2+num3
+#     if 100<=a<=999:
+#         num1=a//100
+#         num2=a//10%10
+#         num3=a%10
+#         return num1+num2+num3
+#     else:
+#         return "invalid number!!"
 # num=int(input("enter 3 digit number: "))
 # print(_3_digit(num))
 
@@ -41,33 +44,25 @@ from random import randint
 # print(sum_of_number(num1))
 
 # תרגיל 5
-# num2=int(input("enter number 2: "))
-# print(sum_of_number(num2))
-# num3=int(input("enter number 3: "))
-# print(sum_of_number(num3))
-# num4=int(input("enter number 4: "))
-# print(sum_of_number(num4))
-# num5=int(input("enter number 5: "))
-# print(sum_of_number(num5))
-# num6=int(input("enter number 6: "))
-# print(sum_of_number(num6))
+# for i in range(5):
+#     num=int(input("enter number: "))
+#     print(sum_of_number(num))
 
 # תרגיל 6
 # def print_2_numbers(a,b):
 #     for i in range(a,b+1):
 #         if a<=i<=b:
 #             print(i,end=" ")
-#     return
 #
 # num1=int(input("enter number 1: "))
 # num2=int(input("enter number 2: "))
-# print(print_2_numbers(num1,num2))
+# print_2_numbers(num1,num2)
 
 # תרגיל 7
 # def maximum(a,b):
 #     if a<b:
 #         return b
-# num1=int(input("enter number 1: "))
+# num1=int(input("\nenter number 1: "))
 # num2=int(input("enter number 2: "))
 # print(maximum(num1,num2))
 #
@@ -77,7 +72,7 @@ from random import randint
 # num1=int(input("enter number 1: "))
 # num2=int(input("enter number 2: "))
 # print(minimum(num1,num2))
-# print(print_2_numbers(num1,num2))
+# print_2_numbers(num1,num2)
 
 # תרגיל 9
 # def age_5_times(age):
@@ -117,7 +112,7 @@ from random import randint
 # def even_numbers(list1:list):
 #     for i in range(2,41,2):
 #         list1.append((i))
-
+#
 # list1=[]
 # even_numbers(list1)
 # print(list1)
@@ -125,12 +120,12 @@ from random import randint
 # תרגיל 12
 # def random_list(list1:list):
 #     list1[:]=[randint(1,100) for i in range(20)]
-    # for i in range(20):
-    #     list1.append(randint(1,100))
-
+#     for i in range(20):
+#         list1.append(randint(1,100))
+#
 # def count_num_in_list(num,list1:list):
 #     return list1.count(num)
-
+#
 # list1=[]
 # random_list(list1)
 # print(list1)
@@ -140,7 +135,7 @@ from random import randint
 # # תרגיל 13
 # def max_index(list1:list):
 #     return list1.index(max(list1))
-
+#
 # print(max_index(list1))
 
 # תרגיל 5 קובץ 2
@@ -187,12 +182,36 @@ from random import randint
 # print(sum_list(list1))
 
 # 10.3
-# def mult_list():
-#     list1=[7,-1,3,2,8]
+# def mult_list(list1:list):
 #     mult=1
 #     for i in list1:
 #         mult*=i
 #     return mult
 #
-# print(mult_list())
+# list11=[7,-1,3,2,8]
+# print(mult_list(list11))
 
+# 10.4
+# def reverse_list(string:str):
+#     return string[::-1]
+#
+# s='1234abcd'
+# print(reverse_list(s))
+
+class Course:
+    def __init__(self,c_number,c_name,stu_number,max_stu):
+        self.c_number= c_number
+        self.c_name = c_name
+        self.stu_number = stu_number
+        self.max_stu = max_stu
+
+    def __str__(self):
+        return (f"course number: {self.c_number}\ncourse name: {self.c_name}\n"
+                f"students number: {self.stu_number}\nmax student number: {self.max_stu}")
+
+    def c_place_num(self):
+        return self.max_stu-self.stu_number
+
+course1=Course(12,'elad',15,35)
+print(course1)
+print(course1.c_place_num())

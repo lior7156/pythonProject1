@@ -16,3 +16,9 @@
 # print(list1)
 # del list1[0]
 # print(list1)
+
+str='good morning'
+print(len(str))
+print(str[2:5])
+print(str[0:4]*3)
+print(str.capitalize())

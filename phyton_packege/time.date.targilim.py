@@ -1,13 +1,13 @@
 # #מציאת גיל בעוד 100 שנה 9.1
-# name=input("enter the name: ")
-# age=int(input("enter the age: "))
-# l = 100-age
-# import datetime
-# x=datetime.datetime.now() +datetime.timedelta(l*365)
-# x.date()
-# now = x
-# year = now.strftime("%Y")
-# print(f"in year {year},{name} will be 100 years old.")
+name=input("enter the name: ")
+age=int(input("enter the age: "))
+l = 100-age
+import datetime
+x=datetime.datetime.now() +datetime.timedelta(l*365)
+x.date()
+now = x
+year = now.strftime("%Y")
+print(f"in year {year},{name} will be 100 years old.")
 
 #9.2
 # import datetime
@@ -35,7 +35,7 @@
 # print(num)
 # if num%7==0 or num%10==7==0 or num//10==7:
 #     print("valid number")
-#
+
 # for i in range(5):
 #     print(i,end=" ")
 
