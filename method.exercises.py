@@ -59,19 +59,19 @@ from random import randint
 # print_2_numbers(num1,num2)
 
 # תרגיל 7
-# def maximum(a,b):
-#     if a<b:
-#         return b
-# num1=int(input("\nenter number 1: "))
-# num2=int(input("enter number 2: "))
-# print(maximum(num1,num2))
-#
-# def minimum(a,b):
-#     if a<b:
-#         return a
-# num1=int(input("enter number 1: "))
-# num2=int(input("enter number 2: "))
-# print(minimum(num1,num2))
+def maximum(a,b):
+    if a<b:
+        return b
+num1=int(input("\nenter number 1: "))
+num2=int(input("enter number 2: "))
+print(maximum(num1,num2))
+
+def minimum(a,b):
+    if a<b:
+        return a
+num1=int(input("enter number 1: "))
+num2=int(input("enter number 2: "))
+print(minimum(num1,num2))
 # print_2_numbers(num1,num2)
 
 # תרגיל 9
@@ -198,20 +198,20 @@ from random import randint
 # s='1234abcd'
 # print(reverse_list(s))
 
-class Course:
-    def __init__(self,c_number,c_name,stu_number,max_stu):
-        self.c_number= c_number
-        self.c_name = c_name
-        self.stu_number = stu_number
-        self.max_stu = max_stu
-
-    def __str__(self):
-        return (f"course number: {self.c_number}\ncourse name: {self.c_name}\n"
-                f"students number: {self.stu_number}\nmax student number: {self.max_stu}")
-
-    def c_place_num(self):
-        return self.max_stu-self.stu_number
-
-course1=Course(12,'elad',15,35)
-print(course1)
-print(course1.c_place_num())
+# class Course:
+#     def __init__(self,c_number,c_name,stu_number,max_stu):
+#         self.c_number= c_number
+#         self.c_name = c_name
+#         self.stu_number = stu_number
+#         self.max_stu = max_stu
+#
+#     def __str__(self):
+#         return (f"course number: {self.c_number}\ncourse name: {self.c_name}\n"
+#                 f"students number: {self.stu_number}\nmax student number: {self.max_stu}")
+#
+#     def c_place_num(self):
+#         return self.max_stu-self.stu_number
+#
+# course1=Course(12,'elad',15,35)
+# print(course1)
+# print(course1.c_place_num())

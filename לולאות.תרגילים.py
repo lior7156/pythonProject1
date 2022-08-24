@@ -1,42 +1,50 @@
 # # שאלה 1
 # sum=0
 # count=0
-
+#
 # for i in range(6):
 #     total=int(input("enter number: "))
 #     sum+=total
 #     count+=1
-# print("sum",sum,"count",sum/count)
+# print("sum", sum, "count", sum/count)
 
 #שאלה 2
 # sum=0
-
+# count=0
+#
 # for i in range(6):
 #     number=int(input("enter number: "))
 #     if number%2==0:
 #         sum+=number
+#         count+=1
 #
 # print("sum",sum)
-# print(sum/6)
+# print(sum/count)
 
 # שאלה 3
-# for i in range(10,100,):
+# for i in range(10,100):
 #     if i%10==7:
-#         print(i)
+#         print(i,end=" ")
 
 # שאלה 4
 # sum=0
-
 # for i in range(10,100,10):
 #     sum+=i
-#     print(i)
+#     print(i,end=" ")
 # print(sum)
+#
+# sum1=0
+# for i in range(10,100):
+#     if i%10==0:
+#         sum1+=i
+#         print(i,end=" ")
+# print(sum1)
 
 # שאלה 5
 # count=0
 # sum=0
 # grade=0
-
+#
 # while 0<=grade<=100:
 #     grade=int(input("enter grade: "))
 #     if 100>=grade>=60:
@@ -51,34 +59,34 @@
 # print(sum/count)
 
 # # שאלה 6
-# count=0
-# sum=0
-# grade=0
-# sum1=0
-# count1=0
+# count = 0
+# sum = 0
+# grade = 0
+# sum1 = 0
+# count1 = 0
 #
-# while 0<=grade<=100:
-#     grade=int(input("enter grade: "))
-#     if 60<=grade<=100:
+# while 0 <= grade <= 100:
+#     grade = int(input("enter grade: "))
+#     if 60 <= grade <= 100:
 #         print("pass")
-#         sum+=grade
-#         count+=1
-#     elif 0<=grade<60:
+#         sum += grade
+#         count += 1
+#     elif 0 <= grade < 60:
 #         print("fail")
-#         sum1+=grade
-#         count1+=1
+#         sum1 += grade
+#         count1 += 1
 #
 # else: print("invalid grade ")
-# print("average",sum1/count1)
-# print("average",sum/count)
+# print("average", sum1/count1)
+# print("average", sum/count)
 
 # שאלה 7
-sum=0
-
-for i in range(5):
-    number=int(input("enter number: "))
-    sum+=number%10
-print(sum)
+# sum=0
+#
+# for i in range(5):
+#     number=int(input("enter number: "))
+#     sum+=number%10
+# print(sum)
 
 # שאלה 8
 # number=int(input("enter number: "))
@@ -90,7 +98,11 @@ print(sum)
 # number=int(input("enter number: "))
 # for i in range(2,number,2):
 #     print(i,end=" ")
-
+#
+# number=int(input("enter number: "))
+# for i in range(2, number):
+#     if i%2==0:
+#         print(i,end=" ")
 # שאלה 10
 # number=1
 # count=0
@@ -177,9 +189,55 @@ print(sum)
 #     sum+=number%10
 # print(sum)
 
-# שאלה 6
-grade=0
-average=0
+# 5
+# count=0
+# sum=0
+# grade=0
+#
+# while 0<=grade<=100:
+#     grade=int(input("enter grade: "))
+#     if 60<=grade<=100:
+#         print("pass")
+#         sum+=grade
+#         count+=1
+#     elif 0<=grade<60:
+#         print("fail")
+# else:
+#     print("invalid grade")
+# print("avg", sum/count)
+
+# 6
+# sum=0
+# count=0
+# grade=0
+# sum1=0
+# count1=0
+#
+# while 0<=grade<=100:
+#     grade=int(input("enter grade: "))
+#     if 60<=grade<=100:
+#         print("pass")
+#         sum+=grade
+#         count+=1
+#     elif 0<=grade<60:
+#         print("fail")
+#         sum1+=grade
+#         count1+=1
+# else:
+#     print("invalid grade")
+# print("avg for passed grades", sum/count)
+# print("avg for failed grades", sum1/count1)
+
+# 7
+# sum=0
+# for i in range(5):
+#     number=int(input("enter number: "))
+#     sum+=number%10
+# print(sum)
+
+# 8
+
+
 
 
 
